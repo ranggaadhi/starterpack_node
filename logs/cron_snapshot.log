@@ -1,0 +1,1125 @@
+[2017-09-25 11:50:50.436] [INFO] cron_snapshot.log - { action: 'START',
+  'data-log': 
+   { message: 'Starting one-script',
+     config: 
+      { infinite_loop: true,
+        log_folder: '/home/rangga/harmony/accounting/logs',
+        log_file: 'cron_snapshot',
+        pid_file: '/home/rangga/harmony/accounting/pid/cron_snapshot',
+        source: '/home/rangga/harmony/accounting/cronjob/snapshot/logic.js',
+        sleep: 1000,
+        run: 'run',
+        init: false,
+        close: false } } }
+[2017-09-25 11:50:50.575] [TRACE] cron_snapshot.log - { action: 'getjournupdate',
+  'data-log': 'success get journ update' }
+[2017-09-25 11:50:50.712] [TRACE] cron_snapshot.log - { action: 'listjournalfromselect',
+  'data-log': '[{"journ_id":207,"company_id":1,"reversed_to":0,"journ_count":29,"journ_name":"DISPOSAL","journ_date":"2017-06-29T17:00:00.000Z","journ_remarks":"Disposal of 1","journ_status":"closed","source_from":"fixed-assets","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-14T06:33:32.000Z","updated_date":"2017-09-14T06:33:32.000Z","journal_details":[{"coadet_id":1,"debit":0,"credit":1950000,"coa_detail":{"tydet_id":1,"coadet_name":"Bank Account","coadet_code":"1001","coa_type_detail":{"tydet_id":1,"coa_type":{"ctype_position":"debit"}}},"tydet_id":1,"balance":-1950000},{"coadet_id":2,"debit":0,"credit":21000000,"coa_detail":{"tydet_id":2,"coadet_name":"Account Receivables","coadet_code":"1100","coa_type_detail":{"tydet_id":2,"coa_type":{"ctype_position":"debit"}}},"tydet_id":2,"balance":-21000000},{"coadet_id":3,"debit":2350000,"credit":0,"coa_detail":{"tydet_id":3,"coadet_name":"Other Receivables","coadet_code":"1200","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":2350000},{"coadet_id":4,"debit":18000000,"credit":0,"coa_detail":{"tydet_id":3,"coadet_name":"VAT In","coadet_code":"1210","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":18000000}]},{"journ_id":60,"company_id":1,"reversed_to":0,"journ_count":60,"journ_name":"Payment: Ben Josua","journ_date":"2017-09-05T17:00:00.000Z","journ_remarks":"Payment for EXP-000008","journ_status":"closed","source_from":"expense-claims","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-06T08:05:31.000Z","updated_date":"2017-09-06T08:05:31.000Z","journal_details":[{"coadet_id":1,"debit":0,"credit":262727,"coa_detail":{"tydet_id":1,"coadet_name":"Bank Account","coadet_code":"1001","coa_type_detail":{"tydet_id":1,"coa_type":{"ctype_position":"debit"}}},"tydet_id":1,"balance":-262727}]},{"journ_id":83,"company_id":1,"reversed_to":84,"journ_count":83,"journ_name":"Payment: CUSTOMER","journ_date":"2017-09-06T17:00:00.000Z","journ_remarks":"Payment for 8686 (Ref: 1)","journ_status":"closed","source_from":"ar-ap","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-07T07:15:04.000Z","updated_date":"2017-09-07T07:15:14.000Z","journal_details":[{"coadet_id":1,"debit":1,"credit":1,"coa_detail":{"tydet_id":1,"coadet_name":"Bank Account","coadet_code":"1001","coa_type_detail":{"tydet_id":1,"coa_type":{"ctype_position":"debit"}}},"tydet_id":1,"balance":0},{"coadet_id":2,"debit":1750001,"credit":1,"coa_detail":{"tydet_id":2,"coadet_name":"Account Receivables","coadet_code":"1100","coa_type_detail":{"tydet_id":2,"coa_type":{"ctype_position":"debit"}}},"tydet_id":2,"balance":1750000}]},{"journ_id":198,"company_id":1,"reversed_to":0,"journ_count":20,"journ_name":"Inventory","journ_date":"2017-01-31T17:00:00.000Z","journ_remarks":"Inventory (Adjustment In)","journ_status":"closed","source_from":"inventory","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-13T12:46:53.000Z","updated_date":"2017-09-13T12:46:53.000Z","journal_details":[{"coadet_id":2,"debit":51000,"credit":0,"coa_detail":{"tydet_id":2,"coadet_name":"Account Receivables","coadet_code":"1100","coa_type_detail":{"tydet_id":2,"coa_type":{"ctype_position":"debit"}}},"tydet_id":2,"balance":51000},{"coadet_id":5,"debit":0,"credit":51000,"coa_detail":{"tydet_id":3,"coadet_name":"Income Tax Receivables","coadet_code":"1220","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":-51000}]},{"journ_id":201,"company_id":1,"reversed_to":0,"journ_count":23,"journ_name":"Inventory","journ_date":"2017-02-01T13:00:00.000Z","journ_remarks":"Inventory (Adjustment Out)","journ_status":"closed","source_from":"inventory","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-13T12:58:03.000Z","updated_date":"2017-09-13T12:58:03.000Z","journal_details":[{"coadet_id":2,"debit":0,"credit":50999.9,"coa_detail":{"tydet_id":2,"coadet_name":"Account Receivables","coadet_code":"1100","coa_type_detail":{"tydet_id":2,"coa_type":{"ctype_position":"debit"}}},"tydet_id":2,"balance":-50999.9},{"coadet_id":31,"debit":50999.9,"credit":0,"coa_detail":{"tydet_id":10,"coadet_name":"Long-Term Loans","coadet_code":"2600","coa_type_detail":{"tydet_id":10,"coa_type":{"ctype_position":"credit"}}},"tydet_id":10,"balance":-50999.9}]},{"journ_id":1,"company_id":1,"reversed_to":5,"journ_count":1,"journ_name":"Rendy Pandugo (INV-000001)","journ_date":"2017-09-05T17:00:00.000Z","journ_remarks":"invoice","journ_status":"closed","source_from":"ar-ap","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-06T07:12:29.000Z","updated_date":"2017-09-06T07:22:06.000Z","journal_details":[{"coadet_id":2,"debit":237608217.73,"credit":119690137.82,"coa_detail":{"tydet_id":2,"coadet_name":"Account Receivables","coadet_code":"1100","coa_type_detail":{"tydet_id":2,"coa_type":{"ctype_position":"debit"}}},"tydet_id":2,"balance":117918079.91},{"coadet_id":3,"debit":2718192.81,"credit":3300011,"coa_detail":{"tydet_id":3,"coadet_name":"Other Receivables","coadet_code":"1200","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":-581818.19},{"coadet_id":21,"debit":11924809.09,"credit":23716945.45,"coa_detail":{"tydet_id":9,"coadet_name":"VAT Out ","coadet_code":"2210","coa_type_detail":{"tydet_id":9,"coa_type":{"ctype_position":"credit"}}},"tydet_id":9,"balance":11792136.36}]},{"journ_id":177,"company_id":1,"reversed_to":0,"journ_count":177,"journ_name":"deny (INV-000008)","journ_date":"2017-09-07T17:00:00.000Z","journ_remarks":"invoice","journ_status":"closed","source_from":"ar-ap","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-08T05:12:59.000Z","updated_date":"2017-09-08T05:13:00.000Z","journal_details":[{"coadet_id":2,"debit":2700,"credit":0,"coa_detail":{"tydet_id":2,"coadet_name":"Account Receivables","coadet_code":"1100","coa_type_detail":{"tydet_id":2,"coa_type":{"ctype_position":"debit"}}},"tydet_id":2,"balance":2700},{"coadet_id":3,"debit":300,"credit":0,"coa_detail":{"tydet_id":3,"coadet_name":"Other Receivables","coadet_code":"1200","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":300},{"coadet_id":34,"debit":0,"credit":3000,"coa_detail":{"tydet_id":11,"coadet_name":"Opening Balance Equity","coadet_code":"3300","coa_type_detail":{"tydet_id":11,"coa_type":{"ctype_position":"credit"}}},"tydet_id":11,"balance":3000}]},{"journ_id":234,"company_id":1,"reversed_to":0,"journ_count":56,"journ_name":"Depreciation Test Asset 1","journ_date":"2017-01-31T00:00:00.000Z","journ_remarks":"Depreciation of 10","journ_status":"closed","source_from":"fixed-assets","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-14T07:49:01.000Z","updated_date":"2017-09-14T07:49:01.000Z","journal_details":[{"coadet_id":3,"debit":100000,"credit":0,"coa_detail":{"tydet_id":3,"coadet_name":"Other Receivables","coadet_code":"1200","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":100000},{"coadet_id":4,"debit":0,"credit":100000,"coa_detail":{"tydet_id":3,"coadet_name":"VAT In","coadet_code":"1210","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":-100000}]},{"journ_id":179,"company_id":1,"reversed_to":0,"journ_count":1,"journ_name":"Depreciation Test Asset 1","journ_date":"2017-02-28T00:00:00.000Z","journ_remarks":"Depreciation of 12","journ_status":"closed","source_from":"fixed-assets","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-11T04:39:48.000Z","updated_date":"2017-09-11T04:39:48.000Z","journal_details":[{"coadet_id":3,"debit":450000,"credit":150000,"coa_detail":{"tydet_id":3,"coadet_name":"Other Receivables","coadet_code":"1200","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":300000},{"coadet_id":4,"debit":150000,"credit":450000,"coa_detail":{"tydet_id":3,"coadet_name":"VAT In","coadet_code":"1210","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":-300000}]},{"journ_id":182,"company_id":1,"reversed_to":0,"journ_count":4,"journ_name":"Depreciation Test Asset 1","journ_date":"2017-03-30T17:00:00.000Z","journ_remarks":"Depreciation of 12","journ_status":"closed","source_from":"fixed-assets","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-11T06:31:16.000Z","updated_date":"2017-09-11T06:31:16.000Z","journal_details":[{"coadet_id":3,"debit":50000,"credit":0,"coa_detail":{"tydet_id":3,"coadet_name":"Other Receivables","coadet_code":"1200","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":50000},{"coadet_id":4,"debit":0,"credit":50000,"coa_detail":{"tydet_id":3,"coadet_name":"VAT In","coadet_code":"1210","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":-50000}]},{"journ_id":185,"company_id":1,"reversed_to":190,"journ_count":7,"journ_name":"Depreciation Test Asset 1","journ_date":"2017-03-31T00:00:00.000Z","journ_remarks":"Depreciation of 1","journ_status":"closed","source_from":"fixed-assets","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-13T04:34:44.000Z","updated_date":"2017-09-13T06:16:05.000Z","journal_details":[{"coadet_id":3,"debit":300000,"credit":150000,"coa_detail":{"tydet_id":3,"coadet_name":"Other Receivables","coadet_code":"1200","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":150000},{"coadet_id":4,"debit":150000,"credit":300000,"coa_detail":{"tydet_id":3,"coadet_name":"VAT In","coadet_code":"1210","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":-150000}]},{"journ_id":183,"company_id":1,"reversed_to":0,"journ_count":5,"journ_name":"Depreciation Test Asset 1","journ_date":"2017-04-29T17:00:00.000Z","journ_remarks":"Depreciation of 12","journ_status":"closed","source_from":"fixed-assets","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-11T06:31:46.000Z","updated_date":"2017-09-11T06:31:46.000Z","journal_details":[{"coadet_id":3,"debit":50000,"credit":0,"coa_detail":{"tydet_id":3,"coadet_name":"Other Receivables","coadet_code":"1200","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":50000},{"coadet_id":4,"debit":0,"credit":50000,"coa_detail":{"tydet_id":3,"coadet_name":"VAT In","coadet_code":"1210","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":-50000}]},{"journ_id":186,"company_id":1,"reversed_to":187,"journ_count":8,"journ_name":"Depreciation Test Asset 1","journ_date":"2017-04-30T00:00:00.000Z","journ_remarks":"Depreciation of 1","journ_status":"closed","source_from":"fixed-assets","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-13T04:34:44.000Z","updated_date":"2017-09-13T04:47:19.000Z","journal_details":[{"coadet_id":3,"debit":300000,"credit":100000,"coa_detail":{"tydet_id":3,"coadet_name":"Other Receivables","coadet_code":"1200","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":200000},{"coadet_id":4,"debit":100000,"credit":300000,"coa_detail":{"tydet_id":3,"coadet_name":"VAT In","coadet_code":"1210","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":-200000}]},{"journ_id":214,"company_id":1,"reversed_to":0,"journ_count":36,"journ_name":"Depreciation Test Asset 1","journ_date":"2017-05-31T00:00:00.000Z","journ_remarks":"Depreciation of 1","journ_status":"closed","source_from":"fixed-assets","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-14T06:35:37.000Z","updated_date":"2017-09-14T06:35:37.000Z","journal_details":[{"coadet_id":3,"debit":200000,"credit":0,"coa_detail":{"tydet_id":3,"coadet_name":"Other Receivables","coadet_code":"1200","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":200000},{"coadet_id":4,"debit":0,"credit":200000,"coa_detail":{"tydet_id":3,"coadet_name":"VAT In","coadet_code":"1210","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":-200000}]},{"journ_id":215,"company_id":1,"reversed_to":0,"journ_count":37,"journ_name":"Depreciation Test Asset 1","journ_date":"2017-06-30T00:00:00.000Z","journ_remarks":"Depreciation of 1","journ_status":"closed","source_from":"fixed-assets","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-14T06:35:37.000Z","updated_date":"2017-09-14T06:35:37.000Z","journal_details":[{"coadet_id":3,"debit":200000,"credit":0,"coa_detail":{"tydet_id":3,"coadet_name":"Other Receivables","coadet_code":"1200","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":200000},{"coadet_id":4,"debit":0,"credit":200000,"coa_detail":{"tydet_id":3,"coadet_name":"VAT In","coadet_code":"1210","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":-200000}]},{"journ_id":216,"company_id":1,"reversed_to":0,"journ_count":38,"journ_name":"Depreciation Test Asset 1","journ_date":"2017-07-31T00:00:00.000Z","journ_remarks":"Depreciation of 1","journ_status":"closed","source_from":"fixed-assets","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-14T06:35:37.000Z","updated_date":"2017-09-14T06:35:37.000Z","journal_details":[{"coadet_id":3,"debit":200000,"credit":0,"coa_detail":{"tydet_id":3,"coadet_name":"Other Receivables","coadet_code":"1200","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":200000},{"coadet_id":4,"debit":0,"credit":200000,"coa_detail":{"tydet_id":3,"coadet_name":"VAT In","coadet_code":"1210","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":-200000}]},{"journ_id":217,"company_id":1,"reversed_to":0,"journ_count":39,"journ_name":"Depreciation Test Asset 1","journ_date":"2017-08-31T00:00:00.000Z","journ_remarks":"Depreciation of 1","journ_status":"closed","source_from":"fixed-assets","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-14T06:35:37.000Z","updated_date":"2017-09-14T06:35:37.000Z","journal_details":[{"coadet_id":3,"debit":200000,"credit":0,"coa_detail":{"tydet_id":3,"coadet_name":"Other Receivables","coadet_code":"1200","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":200000},{"coadet_id":4,"debit":0,"credit":200000,"coa_detail":{"tydet_id":3,"coadet_name":"VAT In","coadet_code":"1210","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":-200000}]},{"journ_id":82,"company_id":1,"reversed_to":0,"journ_count":82,"journ_name":"Payment: EMPLOYEE","journ_date":"2017-09-06T17:00:00.000Z","journ_remarks":"Payment for EXP-000006 (Ref: 123)","journ_status":"closed","source_from":"expense-claims","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-07T07:13:31.000Z","updated_date":"2017-09-07T07:13:31.000Z","journal_details":[{"coadet_id":3,"debit":0,"credit":1.1,"coa_detail":{"tydet_id":3,"coadet_name":"Other Receivables","coadet_code":"1200","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":-1.1}]},{"journ_id":71,"company_id":1,"reversed_to":0,"journ_count":71,"journ_name":"testing journal","journ_date":"2017-09-07T06:47:12.000Z","journ_remarks":"","journ_status":"closed","source_from":"web","is_locked":0,"created_by":1,"updated_by":1,"created_date":"2017-09-07T06:47:36.000Z","updated_date":"2017-09-07T06:47:36.000Z","journal_details":[{"coadet_id":3,"debit":100000,"credit":0,"coa_detail":{"tydet_id":3,"coadet_name":"Other Receivables","coadet_code":"1200","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":100000},{"coadet_id":6,"debit":0,"credit":100000,"coa_detail":{"tydet_id":3,"coadet_name":"Other Tax Receivables","coadet_code":"1250","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":-100000}]},{"journ_id":372,"company_id":1,"reversed_to":0,"journ_count":194,"journ_name":"Depreciation Test Asset 1","journ_date":"2017-09-29T17:00:00.000Z","journ_remarks":"Depreciation of 14","journ_status":"closed","source_from":"fixed-assets","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-25T09:28:44.000Z","updated_date":"2017-09-25T09:28:44.000Z","journal_details":[{"coadet_id":3,"debit":52166.68,"credit":0,"coa_detail":{"tydet_id":3,"coadet_name":"Other Receivables","coadet_code":"1200","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":52166.68},{"coadet_id":4,"debit":0,"credit":52166.68,"coa_detail":{"tydet_id":3,"coadet_name":"VAT In","coadet_code":"1210","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":-52166.68}]},{"journ_id":218,"company_id":1,"reversed_to":0,"journ_count":40,"journ_name":"Depreciation Test Asset 1","journ_date":"2017-09-30T00:00:00.000Z","journ_remarks":"Depreciation of 1","journ_status":"closed","source_from":"fixed-assets","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-14T06:35:37.000Z","updated_date":"2017-09-14T06:35:37.000Z","journal_details":[{"coadet_id":3,"debit":216833.31,"credit":100833.33,"coa_detail":{"tydet_id":3,"coadet_name":"Other Receivables","coadet_code":"1200","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":115999.98},{"coadet_id":4,"debit":100833.33,"credit":216833.31,"coa_detail":{"tydet_id":3,"coadet_name":"VAT In","coadet_code":"1210","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":-115999.98}]},{"journ_id":359,"company_id":1,"reversed_to":0,"journ_count":181,"journ_name":"Depreciation Test Asset 1","journ_date":"2017-10-30T17:00:00.000Z","journ_remarks":"Depreciation of 14","journ_status":"closed","source_from":"fixed-assets","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-20T08:00:05.000Z","updated_date":"2017-09-20T08:00:05.000Z","journal_details":[{"coadet_id":3,"debit":52166.68,"credit":0,"coa_detail":{"tydet_id":3,"coadet_name":"Other Receivables","coadet_code":"1200","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":52166.68},{"coadet_id":4,"debit":0,"credit":52166.68,"coa_detail":{"tydet_id":3,"coadet_name":"VAT In","coadet_code":"1210","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":-52166.68}]},{"journ_id":227,"company_id":1,"reversed_to":231,"journ_count":49,"journ_name":"Depreciation Test Asset 1","journ_date":"2017-10-31T00:00:00.000Z","journ_remarks":"Depreciation of 2","journ_status":"closed","source_from":"fixed-assets","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-14T06:39:48.000Z","updated_date":"2017-09-14T06:41:47.000Z","journal_details":[{"coadet_id":3,"debit":164749.99,"credit":161999.99,"coa_detail":{"tydet_id":3,"coadet_name":"Other Receivables","coadet_code":"1200","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":2750},{"coadet_id":4,"debit":161999.99,"credit":164749.99,"coa_detail":{"tydet_id":3,"coadet_name":"VAT In","coadet_code":"1210","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":-2750}]},{"journ_id":228,"company_id":1,"reversed_to":232,"journ_count":50,"journ_name":"Depreciation Test Asset 1","journ_date":"2017-11-30T00:00:00.000Z","journ_remarks":"Depreciation of 2","journ_status":"closed","source_from":"fixed-assets","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-14T06:39:48.000Z","updated_date":"2017-09-14T06:41:47.000Z","journal_details":[{"coadet_id":3,"debit":178999.99,"credit":178999.99,"coa_detail":{"tydet_id":3,"coadet_name":"Other Receivables","coadet_code":"1200","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":0},{"coadet_id":4,"debit":178999.99,"credit":178999.99,"coa_detail":{"tydet_id":3,"coadet_name":"VAT In","coadet_code":"1210","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":0}]},{"journ_id":44,"company_id":1,"reversed_to":47,"journ_count":44,"journ_name":"EMPLOYEE (Void Clone 674)","journ_date":"2017-09-05T17:00:00.000Z","journ_remarks":"expense_claims","journ_status":"closed","source_from":"expense-claims","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-06T07:41:57.000Z","updated_date":"2017-09-06T07:42:39.000Z","journal_details":[{"coadet_id":4,"debit":17981363.67,"credit":17956818.21,"coa_detail":{"tydet_id":3,"coadet_name":"VAT In","coadet_code":"1210","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":24545.460000000894},{"coadet_id":17,"debit":204193726.52,"credit":204196454.06,"coa_detail":{"tydet_id":6,"coadet_name":"Accumulated Depreciation - Office Equipment","coadet_code":"1830","coa_type_detail":{"tydet_id":6,"coa_type":{"ctype_position":"debit"}}},"tydet_id":6,"balance":-2727.5399999916553},{"coadet_id":26,"debit":13254545.48,"credit":13254545.48,"coa_detail":{"tydet_id":9,"coadet_name":"Dividends Payables","coadet_code":"2260","coa_type_detail":{"tydet_id":9,"coa_type":{"ctype_position":"credit"}}},"tydet_id":9,"balance":0},{"coadet_id":50,"debit":197545454.52,"credit":197545454.52,"coa_detail":{"tydet_id":15,"coadet_name":"Phone & Internet","coadet_code":"5211","coa_type_detail":{"tydet_id":15,"coa_type":{"ctype_position":"debit"}}},"tydet_id":15,"balance":0}]},{"journ_id":118,"company_id":1,"reversed_to":121,"journ_count":118,"journ_name":"EMPLOYEE (Void Clone 541)","journ_date":"2017-09-06T17:00:00.000Z","journ_remarks":"expense_claims","journ_status":"closed","source_from":"expense-claims","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-07T14:08:34.000Z","updated_date":"2017-09-07T14:09:19.000Z","journal_details":[{"coadet_id":4,"debit":8954545.46,"credit":8136363.64,"coa_detail":{"tydet_id":3,"coadet_name":"VAT In","coadet_code":"1210","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":818181.8200000012},{"coadet_id":26,"debit":1636363.64,"credit":2454545.46,"coa_detail":{"tydet_id":9,"coadet_name":"Dividends Payables","coadet_code":"2260","coa_type_detail":{"tydet_id":9,"coa_type":{"ctype_position":"credit"}}},"tydet_id":9,"balance":818181.8200000001},{"coadet_id":49,"debit":89545454.54,"credit":81363636.36,"coa_detail":{"tydet_id":15,"coadet_name":"Dues & Subscriptions","coadet_code":"5210","coa_type_detail":{"tydet_id":15,"coa_type":{"ctype_position":"debit"}}},"tydet_id":15,"balance":8181818.180000007}]},{"journ_id":57,"company_id":1,"reversed_to":81,"journ_count":57,"journ_name":"Payment: EMPLOYEE","journ_date":"2017-09-05T17:00:00.000Z","journ_remarks":"Payment for EXP-000006 (Ref: asd)","journ_status":"closed","source_from":"expense-claims","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-06T07:47:44.000Z","updated_date":"2017-09-07T07:13:04.000Z","journal_details":[{"coadet_id":5,"debit":7221.5,"credit":2727,"coa_detail":{"tydet_id":3,"coadet_name":"Income Tax Receivables","coadet_code":"1220","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":4494.5}]},{"journ_id":69,"company_id":1,"reversed_to":0,"journ_count":69,"journ_name":"HP BARU","journ_date":"2017-09-07T03:59:17.000Z","journ_remarks":"","journ_status":"closed","source_from":"web","is_locked":0,"created_by":1,"updated_by":1,"created_date":"2017-09-07T04:08:33.000Z","updated_date":"2017-09-07T04:08:33.000Z","journal_details":[{"coadet_id":5,"debit":100,"credit":0,"coa_detail":{"tydet_id":3,"coadet_name":"Income Tax Receivables","coadet_code":"1220","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":100},{"coadet_id":36,"debit":0,"credit":100,"coa_detail":{"tydet_id":13,"coadet_name":"Interest Earned","coadet_code":"4500","coa_type_detail":{"tydet_id":13,"coa_type":{"ctype_position":"credit"}}},"tydet_id":13,"balance":100}]},{"journ_id":70,"company_id":1,"reversed_to":0,"journ_count":70,"journ_name":"testing","journ_date":"2017-09-07T06:40:41.000Z","journ_remarks":"","journ_status":"closed","source_from":"web","is_locked":0,"created_by":1,"updated_by":1,"created_date":"2017-09-07T06:41:10.000Z","updated_date":"2017-09-07T06:41:10.000Z","journal_details":[{"coadet_id":5,"debit":100000,"credit":0,"coa_detail":{"tydet_id":3,"coadet_name":"Income Tax Receivables","coadet_code":"1220","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":100000},{"coadet_id":7,"debit":0,"credit":100000,"coa_detail":{"tydet_id":3,"coadet_name":"Prepayments (Prepaid Expenses)","coadet_code":"1300","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":-100000}]},{"journ_id":56,"company_id":1,"reversed_to":0,"journ_count":56,"journ_name":"EMPLOYEE (EXP-000006)","journ_date":"2017-09-05T17:00:00.000Z","journ_remarks":"expense_claims","journ_status":"closed","source_from":"expense-claims","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-06T07:47:21.000Z","updated_date":"2017-09-06T07:47:21.000Z","journal_details":[{"coadet_id":6,"debit":4545.45,"credit":0,"coa_detail":{"tydet_id":3,"coadet_name":"Other Tax Receivables","coadet_code":"1250","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":4545.45}]},{"journ_id":67,"company_id":1,"reversed_to":0,"journ_count":67,"journ_name":"test ","journ_date":"2017-09-07T03:58:27.000Z","journ_remarks":"","journ_status":"closed","source_from":"web","is_locked":0,"created_by":1,"updated_by":1,"created_date":"2017-09-07T03:59:07.000Z","updated_date":"2017-09-07T03:59:07.000Z","journal_details":[{"coadet_id":7,"debit":0,"credit":100,"coa_detail":{"tydet_id":3,"coadet_name":"Prepayments (Prepaid Expenses)","coadet_code":"1300","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":-100},{"coadet_id":26,"debit":100,"credit":0,"coa_detail":{"tydet_id":9,"coadet_name":"Dividends Payables","coadet_code":"2260","coa_type_detail":{"tydet_id":9,"coa_type":{"ctype_position":"credit"}}},"tydet_id":9,"balance":-100}]},{"journ_id":68,"company_id":1,"reversed_to":0,"journ_count":68,"journ_name":"test1","journ_date":"2017-09-07T03:59:17.000Z","journ_remarks":"","journ_status":"closed","source_from":"web","is_locked":0,"created_by":1,"updated_by":1,"created_date":"2017-09-07T04:01:51.000Z","updated_date":"2017-09-07T04:01:51.000Z","journal_details":[{"coadet_id":7,"debit":0,"credit":20,"coa_detail":{"tydet_id":3,"coadet_name":"Prepayments (Prepaid Expenses)","coadet_code":"1300","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":-20},{"coadet_id":8,"debit":20,"credit":0,"coa_detail":{"tydet_id":3,"coadet_name":"Prepaid Tax","coadet_code":"1310","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":20}]},{"journ_id":72,"company_id":1,"reversed_to":95,"journ_count":72,"journ_name":"Kaswati N (EXP-000014)","journ_date":"2017-09-06T17:00:00.000Z","journ_remarks":"expense_claims","journ_status":"closed","source_from":"expense-claims","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-07T06:52:03.000Z","updated_date":"2017-09-07T09:18:06.000Z","journal_details":[{"coadet_id":8,"debit":5000,"credit":3000,"coa_detail":{"tydet_id":3,"coadet_name":"Prepaid Tax","coadet_code":"1310","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":2000}]},{"journ_id":52,"company_id":1,"reversed_to":53,"journ_count":52,"journ_name":"Payment: EMPLOYEE","journ_date":"2017-09-05T17:00:00.000Z","journ_remarks":"Payment for Claim Revise 749 (Ref: Automation)","journ_status":"closed","source_from":"expense-claims","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-06T07:43:18.000Z","updated_date":"2017-09-06T07:43:33.000Z","journal_details":[{"coadet_id":9,"debit":8182818,"credit":8182818,"coa_detail":{"tydet_id":3,"coadet_name":"Loan to Employees","coadet_code":"1400","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":0}]},{"journ_id":65,"company_id":1,"reversed_to":77,"journ_count":65,"journ_name":"kas (EXP-000011)","journ_date":"2017-09-06T17:00:00.000Z","journ_remarks":"expense_claims","journ_status":"closed","source_from":"expense-claims","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-07T03:55:59.000Z","updated_date":"2017-09-07T06:54:43.000Z","journal_details":[{"coadet_id":9,"debit":101000,"credit":8282818.18,"coa_detail":{"tydet_id":3,"coadet_name":"Loan to Employees","coadet_code":"1400","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":-8181818.18},{"coadet_id":17,"debit":89649455.64,"credit":89657454.54,"coa_detail":{"tydet_id":6,"coadet_name":"Accumulated Depreciation - Office Equipment","coadet_code":"1830","coa_type_detail":{"tydet_id":6,"coa_type":{"ctype_position":"debit"}}},"tydet_id":6,"balance":-7998.9000000059605}]},{"journ_id":127,"company_id":1,"reversed_to":159,"journ_count":127,"journ_name":"Kaswati N (EXP-000040)","journ_date":"2017-09-07T17:00:00.000Z","journ_remarks":"expense_claims","journ_status":"closed","source_from":"expense-claims","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-08T03:25:02.000Z","updated_date":"2017-09-08T03:57:28.000Z","journal_details":[{"coadet_id":9,"debit":6800,"credit":4200,"coa_detail":{"tydet_id":3,"coadet_name":"Loan to Employees","coadet_code":"1400","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":2600},{"coadet_id":17,"debit":4200,"credit":6800,"coa_detail":{"tydet_id":6,"coadet_name":"Accumulated Depreciation - Office Equipment","coadet_code":"1830","coa_type_detail":{"tydet_id":6,"coa_type":{"ctype_position":"debit"}}},"tydet_id":6,"balance":-2600}]},{"journ_id":245,"company_id":1,"reversed_to":0,"journ_count":67,"journ_name":"DISPOSAL","journ_date":"2017-06-29T17:00:00.000Z","journ_remarks":"Disposal of 10","journ_status":"closed","source_from":"fixed-assets","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-14T14:42:08.000Z","updated_date":"2017-09-14T14:42:08.000Z","journal_details":[{"coadet_id":10,"debit":2600000,"credit":0,"coa_detail":{"tydet_id":3,"coadet_name":"Loan to Others","coadet_code":"1410","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":2600000}]},{"journ_id":249,"company_id":1,"reversed_to":0,"journ_count":71,"journ_name":"Inventory","journ_date":"2017-02-01T13:00:00.000Z","journ_remarks":"Inventory (Invoice)","journ_status":"closed","source_from":"inventory","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-15T07:14:40.000Z","updated_date":"2017-09-15T07:14:40.000Z","journal_details":[{"coadet_id":11,"debit":0,"credit":50000,"coa_detail":{"tydet_id":3,"coadet_name":"Investments","coadet_code":"1450","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":-50000},{"coadet_id":37,"debit":50000,"credit":0,"coa_detail":{"tydet_id":13,"coadet_name":"Other Incomes","coadet_code":"4600","coa_type_detail":{"tydet_id":13,"coa_type":{"ctype_position":"credit"}}},"tydet_id":13,"balance":-50000}]},{"journ_id":369,"company_id":1,"reversed_to":0,"journ_count":191,"journ_name":"Inventory","journ_date":"2017-02-28T17:00:00.000Z","journ_remarks":"Inventory (Adjustment Revaluation)","journ_status":"closed","source_from":"inventory","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-25T04:36:36.000Z","updated_date":"2017-09-25T04:36:36.000Z","journal_details":[{"coadet_id":11,"debit":702048048038068900,"credit":702048048038068900,"coa_detail":{"tydet_id":3,"coadet_name":"Investments","coadet_code":"1450","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":0}]},{"journ_id":8,"company_id":1,"reversed_to":0,"journ_count":8,"journ_name":"Inventory","journ_date":"2017-09-05T17:00:00.000Z","journ_remarks":"Inventory (Adjustment In)","journ_status":"closed","source_from":"inventory","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-06T07:26:10.000Z","updated_date":"2017-09-06T07:26:10.000Z","journal_details":[{"coadet_id":11,"debit":32045000,"credit":20070000,"coa_detail":{"tydet_id":3,"coadet_name":"Investments","coadet_code":"1450","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":11975000}]},{"journ_id":86,"company_id":1,"reversed_to":0,"journ_count":86,"journ_name":"Inventory","journ_date":"2017-09-06T17:00:00.000Z","journ_remarks":"Inventory (Adjustment In)","journ_status":"closed","source_from":"inventory","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-07T07:39:34.000Z","updated_date":"2017-09-07T07:39:34.000Z","journal_details":[{"coadet_id":11,"debit":13880,"credit":9440,"coa_detail":{"tydet_id":3,"coadet_name":"Investments","coadet_code":"1450","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":4440},{"coadet_id":42,"debit":4440,"credit":8880,"coa_detail":{"tydet_id":15,"coadet_name":"Stamp Duties","coadet_code":"5203","coa_type_detail":{"tydet_id":15,"coa_type":{"ctype_position":"debit"}}},"tydet_id":15,"balance":-4440}]},{"journ_id":178,"company_id":1,"reversed_to":0,"journ_count":178,"journ_name":"Inventory","journ_date":"2017-09-07T17:00:00.000Z","journ_remarks":"Inventory (Invoice)","journ_status":"closed","source_from":"inventory","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-08T05:13:00.000Z","updated_date":"2017-09-08T05:13:00.000Z","journal_details":[{"coadet_id":11,"debit":0,"credit":3000,"coa_detail":{"tydet_id":3,"coadet_name":"Investments","coadet_code":"1450","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":-3000},{"coadet_id":38,"debit":3000,"credit":0,"coa_detail":{"tydet_id":14,"coadet_name":"Cost of Sales","coadet_code":"5000","coa_type_detail":{"tydet_id":14,"coa_type":{"ctype_position":"debit"}}},"tydet_id":14,"balance":3000}]},{"journ_id":176,"company_id":1,"reversed_to":0,"journ_count":176,"journ_name":"CUSTOMER (INV-000007)","journ_date":"2017-09-06T17:00:00.000Z","journ_remarks":"invoice","journ_status":"closed","source_from":"ar-ap","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-08T05:11:53.000Z","updated_date":"2017-09-08T05:11:54.000Z","journal_details":[{"coadet_id":34,"debit":0,"credit":1750000,"coa_detail":{"tydet_id":11,"coadet_name":"Opening Balance Equity","coadet_code":"3300","coa_type_detail":{"tydet_id":11,"coa_type":{"ctype_position":"credit"}}},"tydet_id":11,"balance":1750000}]},{"journ_id":2,"company_id":1,"reversed_to":3,"journ_count":2,"journ_name":"CUSTOMER (Selenium Auto 983)","journ_date":"2017-09-05T17:00:00.000Z","journ_remarks":"invoice","journ_status":"closed","source_from":"ar-ap","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-06T07:21:29.000Z","updated_date":"2017-09-06T07:21:29.000Z","journal_details":[{"coadet_id":35,"debit":117066272.73,"credit":234078545.46,"coa_detail":{"tydet_id":12,"coadet_name":"Sales","coadet_code":"4000","coa_type_detail":{"tydet_id":12,"coa_type":{"ctype_position":"credit"}}},"tydet_id":12,"balance":117012272.73},{"coadet_id":73,"debit":5433,"credit":5416.5,"coa_detail":{"tydet_id":16,"coadet_name":"Bank Revaluations","coadet_code":"5520","coa_type_detail":{"tydet_id":16,"coa_type":{"ctype_position":"debit"}}},"tydet_id":16,"balance":16.5}]},{"journ_id":64,"company_id":1,"reversed_to":66,"journ_count":64,"journ_name":"EMPLOYEE (EXPENSE USD 863)","journ_date":"2017-09-05T17:00:00.000Z","journ_remarks":"expense_claims","journ_status":"closed","source_from":"expense-claims","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-07T03:36:20.000Z","updated_date":"2017-09-07T03:56:38.000Z","journal_details":[{"coadet_id":38,"debit":6500000,"credit":6500000,"coa_detail":{"tydet_id":14,"coadet_name":"Cost of Sales","coadet_code":"5000","coa_type_detail":{"tydet_id":14,"coa_type":{"ctype_position":"debit"}}},"tydet_id":14,"balance":0}]},{"journ_id":85,"company_id":1,"reversed_to":0,"journ_count":85,"journ_name":"Rendy Pandugo (BIL-000001)","journ_date":"2017-09-06T17:00:00.000Z","journ_remarks":"bill","journ_status":"closed","source_from":"ar-ap","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-07T07:37:03.000Z","updated_date":"2017-09-07T07:37:03.000Z","journal_details":[{"coadet_id":38,"debit":6506000,"credit":6500000,"coa_detail":{"tydet_id":14,"coadet_name":"Cost of Sales","coadet_code":"5000","coa_type_detail":{"tydet_id":14,"coa_type":{"ctype_position":"debit"}}},"tydet_id":14,"balance":6000}]},{"journ_id":10,"company_id":1,"reversed_to":15,"journ_count":10,"journ_name":"Inventory","journ_date":"2017-09-05T17:00:00.000Z","journ_remarks":"Inventory (Invoice)","journ_status":"closed","source_from":"inventory","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-06T07:27:06.000Z","updated_date":"2017-09-06T07:27:59.000Z","journal_details":[{"coadet_id":39,"debit":70000,"credit":45000,"coa_detail":{"tydet_id":15,"coadet_name":"General & Admin Expenses","coadet_code":"5200","coa_type_detail":{"tydet_id":15,"coa_type":{"ctype_position":"debit"}}},"tydet_id":15,"balance":25000}]},{"journ_id":90,"company_id":1,"reversed_to":0,"journ_count":90,"journ_name":"Inventory","journ_date":"2017-09-06T17:00:00.000Z","journ_remarks":"Inventory (Adjustment Revaluation)","journ_status":"closed","source_from":"inventory","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-07T07:57:38.000Z","updated_date":"2017-09-07T07:57:38.000Z","journal_details":[{"coadet_id":39,"debit":1175,"credit":0,"coa_detail":{"tydet_id":15,"coadet_name":"General & Admin Expenses","coadet_code":"5200","coa_type_detail":{"tydet_id":15,"coa_type":{"ctype_position":"debit"}}},"tydet_id":15,"balance":1175}]},{"journ_id":88,"company_id":1,"reversed_to":0,"journ_count":88,"journ_name":"Inventory","journ_date":"2017-09-06T17:00:00.000Z","journ_remarks":"Inventory (Adjustment Revaluation)","journ_status":"closed","source_from":"inventory","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-07T07:49:10.000Z","updated_date":"2017-09-07T07:49:10.000Z","journal_details":[{"coadet_id":40,"debit":3825,"credit":5000,"coa_detail":{"tydet_id":15,"coadet_name":"Advertising & Promotional","coadet_code":"5201","coa_type_detail":{"tydet_id":15,"coa_type":{"ctype_position":"debit"}}},"tydet_id":15,"balance":-1175}]},{"journ_id":27,"company_id":1,"reversed_to":0,"journ_count":27,"journ_name":"Inventory","journ_date":"2017-09-05T17:00:00.000Z","journ_remarks":"Inventory (Adjustment In)","journ_status":"closed","source_from":"inventory","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-06T07:35:36.000Z","updated_date":"2017-09-06T07:35:36.000Z","journal_details":[{"coadet_id":59,"debit":0,"credit":12000000,"coa_detail":{"tydet_id":15,"coadet_name":"Repair & Maintenance","coadet_code":"5220","coa_type_detail":{"tydet_id":15,"coa_type":{"ctype_position":"debit"}}},"tydet_id":15,"balance":-12000000}]},{"journ_id":25,"company_id":1,"reversed_to":41,"journ_count":25,"journ_name":"CUSTOMER (Sales USD 321)","journ_date":"2017-09-05T17:00:00.000Z","journ_remarks":"invoice","journ_status":"closed","source_from":"ar-ap","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-06T07:32:07.000Z","updated_date":"2017-09-06T07:37:16.000Z","journal_details":[{"coadet_id":65,"debit":23400000,"credit":11700000,"coa_detail":{"tydet_id":15,"coadet_name":"Depreciation Expense","coadet_code":"5240","coa_type_detail":{"tydet_id":15,"coa_type":{"ctype_position":"debit"}}},"tydet_id":15,"balance":11700000}]}]' }
+[2017-09-25 11:50:50.725] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 1,
+     tydet_id: 1,
+     coasnap_date: 2017-06-29T17:00:00.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 1950000,
+     coasnap_balance: -1950000,
+     generated_date: 2017-09-25T11:50:50.713Z } }
+[2017-09-25 11:50:50.726] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.730] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 2,
+     tydet_id: 2,
+     coasnap_date: 2017-06-29T17:00:00.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 21000000,
+     coasnap_balance: -21000000,
+     generated_date: 2017-09-25T11:50:50.726Z } }
+[2017-09-25 11:50:50.731] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.733] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 3,
+     tydet_id: 3,
+     coasnap_date: 2017-06-29T17:00:00.000Z,
+     coasnap_debit: 2350000,
+     coasnap_credit: 0,
+     coasnap_balance: 2350000,
+     generated_date: 2017-09-25T11:50:50.731Z } }
+[2017-09-25 11:50:50.734] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.739] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 4,
+     tydet_id: 3,
+     coasnap_date: 2017-06-29T17:00:00.000Z,
+     coasnap_debit: 18000000,
+     coasnap_credit: 0,
+     coasnap_balance: 18000000,
+     generated_date: 2017-09-25T11:50:50.734Z } }
+[2017-09-25 11:50:50.740] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.744] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 1,
+     tydet_id: 1,
+     coasnap_date: 2017-09-05T17:00:00.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 262727,
+     coasnap_balance: -262727,
+     generated_date: 2017-09-25T11:50:50.740Z } }
+[2017-09-25 11:50:50.745] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.747] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 1,
+     tydet_id: 1,
+     coasnap_date: 2017-09-06T17:00:00.000Z,
+     coasnap_debit: 1,
+     coasnap_credit: 1,
+     coasnap_balance: 0,
+     generated_date: 2017-09-25T11:50:50.745Z } }
+[2017-09-25 11:50:50.748] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.750] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 2,
+     tydet_id: 2,
+     coasnap_date: 2017-09-06T17:00:00.000Z,
+     coasnap_debit: 1750001,
+     coasnap_credit: 1,
+     coasnap_balance: 1750000,
+     generated_date: 2017-09-25T11:50:50.748Z } }
+[2017-09-25 11:50:50.751] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.756] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 2,
+     tydet_id: 2,
+     coasnap_date: 2017-01-31T17:00:00.000Z,
+     coasnap_debit: 51000,
+     coasnap_credit: 0,
+     coasnap_balance: 51000,
+     generated_date: 2017-09-25T11:50:50.751Z } }
+[2017-09-25 11:50:50.756] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.759] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 5,
+     tydet_id: 3,
+     coasnap_date: 2017-01-31T17:00:00.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 51000,
+     coasnap_balance: -51000,
+     generated_date: 2017-09-25T11:50:50.756Z } }
+[2017-09-25 11:50:50.760] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.762] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 2,
+     tydet_id: 2,
+     coasnap_date: 2017-02-01T13:00:00.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 50999.9,
+     coasnap_balance: -50999.9,
+     generated_date: 2017-09-25T11:50:50.760Z } }
+[2017-09-25 11:50:50.762] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.765] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 31,
+     tydet_id: 10,
+     coasnap_date: 2017-02-01T13:00:00.000Z,
+     coasnap_debit: 50999.9,
+     coasnap_credit: 0,
+     coasnap_balance: -50999.9,
+     generated_date: 2017-09-25T11:50:50.763Z } }
+[2017-09-25 11:50:50.765] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.767] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 2,
+     tydet_id: 2,
+     coasnap_date: 2017-09-05T17:00:00.000Z,
+     coasnap_debit: 237608217.73,
+     coasnap_credit: 119690137.82,
+     coasnap_balance: 117918079.91,
+     generated_date: 2017-09-25T11:50:50.765Z } }
+[2017-09-25 11:50:50.768] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.772] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 3,
+     tydet_id: 3,
+     coasnap_date: 2017-09-05T17:00:00.000Z,
+     coasnap_debit: 2718192.81,
+     coasnap_credit: 3300011,
+     coasnap_balance: -581818.19,
+     generated_date: 2017-09-25T11:50:50.768Z } }
+[2017-09-25 11:50:50.772] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.774] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 21,
+     tydet_id: 9,
+     coasnap_date: 2017-09-05T17:00:00.000Z,
+     coasnap_debit: 11924809.09,
+     coasnap_credit: 23716945.45,
+     coasnap_balance: 11792136.36,
+     generated_date: 2017-09-25T11:50:50.772Z } }
+[2017-09-25 11:50:50.775] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.777] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 2,
+     tydet_id: 2,
+     coasnap_date: 2017-09-07T17:00:00.000Z,
+     coasnap_debit: 2700,
+     coasnap_credit: 0,
+     coasnap_balance: 2700,
+     generated_date: 2017-09-25T11:50:50.775Z } }
+[2017-09-25 11:50:50.778] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.783] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 3,
+     tydet_id: 3,
+     coasnap_date: 2017-09-07T17:00:00.000Z,
+     coasnap_debit: 300,
+     coasnap_credit: 0,
+     coasnap_balance: 300,
+     generated_date: 2017-09-25T11:50:50.779Z } }
+[2017-09-25 11:50:50.783] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.785] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 34,
+     tydet_id: 11,
+     coasnap_date: 2017-09-07T17:00:00.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 3000,
+     coasnap_balance: 3000,
+     generated_date: 2017-09-25T11:50:50.783Z } }
+[2017-09-25 11:50:50.786] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.789] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 3,
+     tydet_id: 3,
+     coasnap_date: 2017-01-31T00:00:00.000Z,
+     coasnap_debit: 100000,
+     coasnap_credit: 0,
+     coasnap_balance: 100000,
+     generated_date: 2017-09-25T11:50:50.786Z } }
+[2017-09-25 11:50:50.789] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.792] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 4,
+     tydet_id: 3,
+     coasnap_date: 2017-01-31T00:00:00.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 100000,
+     coasnap_balance: -100000,
+     generated_date: 2017-09-25T11:50:50.789Z } }
+[2017-09-25 11:50:50.792] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.795] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 3,
+     tydet_id: 3,
+     coasnap_date: 2017-02-28T00:00:00.000Z,
+     coasnap_debit: 450000,
+     coasnap_credit: 150000,
+     coasnap_balance: 300000,
+     generated_date: 2017-09-25T11:50:50.792Z } }
+[2017-09-25 11:50:50.795] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.797] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 4,
+     tydet_id: 3,
+     coasnap_date: 2017-02-28T00:00:00.000Z,
+     coasnap_debit: 150000,
+     coasnap_credit: 450000,
+     coasnap_balance: -300000,
+     generated_date: 2017-09-25T11:50:50.795Z } }
+[2017-09-25 11:50:50.797] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.799] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 3,
+     tydet_id: 3,
+     coasnap_date: 2017-03-30T17:00:00.000Z,
+     coasnap_debit: 50000,
+     coasnap_credit: 0,
+     coasnap_balance: 50000,
+     generated_date: 2017-09-25T11:50:50.797Z } }
+[2017-09-25 11:50:50.799] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.801] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 4,
+     tydet_id: 3,
+     coasnap_date: 2017-03-30T17:00:00.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 50000,
+     coasnap_balance: -50000,
+     generated_date: 2017-09-25T11:50:50.799Z } }
+[2017-09-25 11:50:50.801] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.803] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 3,
+     tydet_id: 3,
+     coasnap_date: 2017-03-31T00:00:00.000Z,
+     coasnap_debit: 300000,
+     coasnap_credit: 150000,
+     coasnap_balance: 150000,
+     generated_date: 2017-09-25T11:50:50.801Z } }
+[2017-09-25 11:50:50.803] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.805] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 4,
+     tydet_id: 3,
+     coasnap_date: 2017-03-31T00:00:00.000Z,
+     coasnap_debit: 150000,
+     coasnap_credit: 300000,
+     coasnap_balance: -150000,
+     generated_date: 2017-09-25T11:50:50.803Z } }
+[2017-09-25 11:50:50.805] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.807] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 3,
+     tydet_id: 3,
+     coasnap_date: 2017-04-29T17:00:00.000Z,
+     coasnap_debit: 50000,
+     coasnap_credit: 0,
+     coasnap_balance: 50000,
+     generated_date: 2017-09-25T11:50:50.805Z } }
+[2017-09-25 11:50:50.808] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.810] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 4,
+     tydet_id: 3,
+     coasnap_date: 2017-04-29T17:00:00.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 50000,
+     coasnap_balance: -50000,
+     generated_date: 2017-09-25T11:50:50.808Z } }
+[2017-09-25 11:50:50.810] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.818] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 3,
+     tydet_id: 3,
+     coasnap_date: 2017-04-30T00:00:00.000Z,
+     coasnap_debit: 300000,
+     coasnap_credit: 100000,
+     coasnap_balance: 200000,
+     generated_date: 2017-09-25T11:50:50.811Z } }
+[2017-09-25 11:50:50.818] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.821] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 4,
+     tydet_id: 3,
+     coasnap_date: 2017-04-30T00:00:00.000Z,
+     coasnap_debit: 100000,
+     coasnap_credit: 300000,
+     coasnap_balance: -200000,
+     generated_date: 2017-09-25T11:50:50.818Z } }
+[2017-09-25 11:50:50.821] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.823] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 3,
+     tydet_id: 3,
+     coasnap_date: 2017-05-31T00:00:00.000Z,
+     coasnap_debit: 200000,
+     coasnap_credit: 0,
+     coasnap_balance: 200000,
+     generated_date: 2017-09-25T11:50:50.821Z } }
+[2017-09-25 11:50:50.824] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.826] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 4,
+     tydet_id: 3,
+     coasnap_date: 2017-05-31T00:00:00.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 200000,
+     coasnap_balance: -200000,
+     generated_date: 2017-09-25T11:50:50.824Z } }
+[2017-09-25 11:50:50.826] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.830] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 3,
+     tydet_id: 3,
+     coasnap_date: 2017-06-30T00:00:00.000Z,
+     coasnap_debit: 200000,
+     coasnap_credit: 0,
+     coasnap_balance: 200000,
+     generated_date: 2017-09-25T11:50:50.826Z } }
+[2017-09-25 11:50:50.831] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.834] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 4,
+     tydet_id: 3,
+     coasnap_date: 2017-06-30T00:00:00.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 200000,
+     coasnap_balance: -200000,
+     generated_date: 2017-09-25T11:50:50.831Z } }
+[2017-09-25 11:50:50.834] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.835] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 3,
+     tydet_id: 3,
+     coasnap_date: 2017-07-31T00:00:00.000Z,
+     coasnap_debit: 200000,
+     coasnap_credit: 0,
+     coasnap_balance: 200000,
+     generated_date: 2017-09-25T11:50:50.834Z } }
+[2017-09-25 11:50:50.836] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.837] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 4,
+     tydet_id: 3,
+     coasnap_date: 2017-07-31T00:00:00.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 200000,
+     coasnap_balance: -200000,
+     generated_date: 2017-09-25T11:50:50.836Z } }
+[2017-09-25 11:50:50.837] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.839] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 3,
+     tydet_id: 3,
+     coasnap_date: 2017-08-31T00:00:00.000Z,
+     coasnap_debit: 200000,
+     coasnap_credit: 0,
+     coasnap_balance: 200000,
+     generated_date: 2017-09-25T11:50:50.837Z } }
+[2017-09-25 11:50:50.839] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.840] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 4,
+     tydet_id: 3,
+     coasnap_date: 2017-08-31T00:00:00.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 200000,
+     coasnap_balance: -200000,
+     generated_date: 2017-09-25T11:50:50.839Z } }
+[2017-09-25 11:50:50.841] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.843] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 3,
+     tydet_id: 3,
+     coasnap_date: 2017-09-06T17:00:00.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 1.1,
+     coasnap_balance: -1.1,
+     generated_date: 2017-09-25T11:50:50.841Z } }
+[2017-09-25 11:50:50.844] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.847] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 3,
+     tydet_id: 3,
+     coasnap_date: 2017-09-07T06:47:12.000Z,
+     coasnap_debit: 100000,
+     coasnap_credit: 0,
+     coasnap_balance: 100000,
+     generated_date: 2017-09-25T11:50:50.844Z } }
+[2017-09-25 11:50:50.847] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.850] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 6,
+     tydet_id: 3,
+     coasnap_date: 2017-09-07T06:47:12.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 100000,
+     coasnap_balance: -100000,
+     generated_date: 2017-09-25T11:50:50.847Z } }
+[2017-09-25 11:50:50.850] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.853] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 3,
+     tydet_id: 3,
+     coasnap_date: 2017-09-29T17:00:00.000Z,
+     coasnap_debit: 52166.68,
+     coasnap_credit: 0,
+     coasnap_balance: 52166.68,
+     generated_date: 2017-09-25T11:50:50.851Z } }
+[2017-09-25 11:50:50.853] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.855] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 4,
+     tydet_id: 3,
+     coasnap_date: 2017-09-29T17:00:00.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 52166.68,
+     coasnap_balance: -52166.68,
+     generated_date: 2017-09-25T11:50:50.853Z } }
+[2017-09-25 11:50:50.855] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.857] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 3,
+     tydet_id: 3,
+     coasnap_date: 2017-09-30T00:00:00.000Z,
+     coasnap_debit: 216833.31,
+     coasnap_credit: 100833.33,
+     coasnap_balance: 115999.98,
+     generated_date: 2017-09-25T11:50:50.855Z } }
+[2017-09-25 11:50:50.858] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.861] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 4,
+     tydet_id: 3,
+     coasnap_date: 2017-09-30T00:00:00.000Z,
+     coasnap_debit: 100833.33,
+     coasnap_credit: 216833.31,
+     coasnap_balance: -115999.98,
+     generated_date: 2017-09-25T11:50:50.858Z } }
+[2017-09-25 11:50:50.861] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.862] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 3,
+     tydet_id: 3,
+     coasnap_date: 2017-10-30T17:00:00.000Z,
+     coasnap_debit: 52166.68,
+     coasnap_credit: 0,
+     coasnap_balance: 52166.68,
+     generated_date: 2017-09-25T11:50:50.861Z } }
+[2017-09-25 11:50:50.862] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.865] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 4,
+     tydet_id: 3,
+     coasnap_date: 2017-10-30T17:00:00.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 52166.68,
+     coasnap_balance: -52166.68,
+     generated_date: 2017-09-25T11:50:50.863Z } }
+[2017-09-25 11:50:50.866] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.867] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 3,
+     tydet_id: 3,
+     coasnap_date: 2017-10-31T00:00:00.000Z,
+     coasnap_debit: 164749.99,
+     coasnap_credit: 161999.99,
+     coasnap_balance: 2750,
+     generated_date: 2017-09-25T11:50:50.866Z } }
+[2017-09-25 11:50:50.867] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.870] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 4,
+     tydet_id: 3,
+     coasnap_date: 2017-10-31T00:00:00.000Z,
+     coasnap_debit: 161999.99,
+     coasnap_credit: 164749.99,
+     coasnap_balance: -2750,
+     generated_date: 2017-09-25T11:50:50.867Z } }
+[2017-09-25 11:50:50.870] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.873] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 3,
+     tydet_id: 3,
+     coasnap_date: 2017-11-30T00:00:00.000Z,
+     coasnap_debit: 178999.99,
+     coasnap_credit: 178999.99,
+     coasnap_balance: 0,
+     generated_date: 2017-09-25T11:50:50.870Z } }
+[2017-09-25 11:50:50.874] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.876] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 4,
+     tydet_id: 3,
+     coasnap_date: 2017-11-30T00:00:00.000Z,
+     coasnap_debit: 178999.99,
+     coasnap_credit: 178999.99,
+     coasnap_balance: 0,
+     generated_date: 2017-09-25T11:50:50.874Z } }
+[2017-09-25 11:50:50.876] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.878] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 4,
+     tydet_id: 3,
+     coasnap_date: 2017-09-05T17:00:00.000Z,
+     coasnap_debit: 17981363.67,
+     coasnap_credit: 17956818.21,
+     coasnap_balance: 24545.460000000894,
+     generated_date: 2017-09-25T11:50:50.876Z } }
+[2017-09-25 11:50:50.878] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.880] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 17,
+     tydet_id: 6,
+     coasnap_date: 2017-09-05T17:00:00.000Z,
+     coasnap_debit: 204193726.52,
+     coasnap_credit: 204196454.06,
+     coasnap_balance: -2727.5399999916553,
+     generated_date: 2017-09-25T11:50:50.878Z } }
+[2017-09-25 11:50:50.880] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.881] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 26,
+     tydet_id: 9,
+     coasnap_date: 2017-09-05T17:00:00.000Z,
+     coasnap_debit: 13254545.48,
+     coasnap_credit: 13254545.48,
+     coasnap_balance: 0,
+     generated_date: 2017-09-25T11:50:50.880Z } }
+[2017-09-25 11:50:50.882] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.884] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 50,
+     tydet_id: 15,
+     coasnap_date: 2017-09-05T17:00:00.000Z,
+     coasnap_debit: 197545454.52,
+     coasnap_credit: 197545454.52,
+     coasnap_balance: 0,
+     generated_date: 2017-09-25T11:50:50.882Z } }
+[2017-09-25 11:50:50.884] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.886] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 4,
+     tydet_id: 3,
+     coasnap_date: 2017-09-06T17:00:00.000Z,
+     coasnap_debit: 8954545.46,
+     coasnap_credit: 8136363.64,
+     coasnap_balance: 818181.8200000012,
+     generated_date: 2017-09-25T11:50:50.884Z } }
+[2017-09-25 11:50:50.886] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.888] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 26,
+     tydet_id: 9,
+     coasnap_date: 2017-09-06T17:00:00.000Z,
+     coasnap_debit: 1636363.64,
+     coasnap_credit: 2454545.46,
+     coasnap_balance: 818181.8200000001,
+     generated_date: 2017-09-25T11:50:50.886Z } }
+[2017-09-25 11:50:50.888] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.892] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 49,
+     tydet_id: 15,
+     coasnap_date: 2017-09-06T17:00:00.000Z,
+     coasnap_debit: 89545454.54,
+     coasnap_credit: 81363636.36,
+     coasnap_balance: 8181818.180000007,
+     generated_date: 2017-09-25T11:50:50.889Z } }
+[2017-09-25 11:50:50.892] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.894] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 5,
+     tydet_id: 3,
+     coasnap_date: 2017-09-05T17:00:00.000Z,
+     coasnap_debit: 7221.5,
+     coasnap_credit: 2727,
+     coasnap_balance: 4494.5,
+     generated_date: 2017-09-25T11:50:50.892Z } }
+[2017-09-25 11:50:50.894] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.896] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 5,
+     tydet_id: 3,
+     coasnap_date: 2017-09-07T03:59:17.000Z,
+     coasnap_debit: 100,
+     coasnap_credit: 0,
+     coasnap_balance: 100,
+     generated_date: 2017-09-25T11:50:50.894Z } }
+[2017-09-25 11:50:50.897] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.899] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 36,
+     tydet_id: 13,
+     coasnap_date: 2017-09-07T03:59:17.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 100,
+     coasnap_balance: 100,
+     generated_date: 2017-09-25T11:50:50.897Z } }
+[2017-09-25 11:50:50.899] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.900] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 5,
+     tydet_id: 3,
+     coasnap_date: 2017-09-07T06:40:41.000Z,
+     coasnap_debit: 100000,
+     coasnap_credit: 0,
+     coasnap_balance: 100000,
+     generated_date: 2017-09-25T11:50:50.899Z } }
+[2017-09-25 11:50:50.901] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.902] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 7,
+     tydet_id: 3,
+     coasnap_date: 2017-09-07T06:40:41.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 100000,
+     coasnap_balance: -100000,
+     generated_date: 2017-09-25T11:50:50.901Z } }
+[2017-09-25 11:50:50.902] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.904] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 6,
+     tydet_id: 3,
+     coasnap_date: 2017-09-05T17:00:00.000Z,
+     coasnap_debit: 4545.45,
+     coasnap_credit: 0,
+     coasnap_balance: 4545.45,
+     generated_date: 2017-09-25T11:50:50.903Z } }
+[2017-09-25 11:50:50.905] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.907] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 7,
+     tydet_id: 3,
+     coasnap_date: 2017-09-07T03:58:27.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 100,
+     coasnap_balance: -100,
+     generated_date: 2017-09-25T11:50:50.905Z } }
+[2017-09-25 11:50:50.907] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.911] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 26,
+     tydet_id: 9,
+     coasnap_date: 2017-09-07T03:58:27.000Z,
+     coasnap_debit: 100,
+     coasnap_credit: 0,
+     coasnap_balance: -100,
+     generated_date: 2017-09-25T11:50:50.908Z } }
+[2017-09-25 11:50:50.915] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.918] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 7,
+     tydet_id: 3,
+     coasnap_date: 2017-09-07T03:59:17.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 20,
+     coasnap_balance: -20,
+     generated_date: 2017-09-25T11:50:50.916Z } }
+[2017-09-25 11:50:50.918] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.920] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 8,
+     tydet_id: 3,
+     coasnap_date: 2017-09-07T03:59:17.000Z,
+     coasnap_debit: 20,
+     coasnap_credit: 0,
+     coasnap_balance: 20,
+     generated_date: 2017-09-25T11:50:50.918Z } }
+[2017-09-25 11:50:50.921] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.922] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 8,
+     tydet_id: 3,
+     coasnap_date: 2017-09-06T17:00:00.000Z,
+     coasnap_debit: 5000,
+     coasnap_credit: 3000,
+     coasnap_balance: 2000,
+     generated_date: 2017-09-25T11:50:50.921Z } }
+[2017-09-25 11:50:50.922] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.924] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 9,
+     tydet_id: 3,
+     coasnap_date: 2017-09-05T17:00:00.000Z,
+     coasnap_debit: 8182818,
+     coasnap_credit: 8182818,
+     coasnap_balance: 0,
+     generated_date: 2017-09-25T11:50:50.922Z } }
+[2017-09-25 11:50:50.924] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.925] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 9,
+     tydet_id: 3,
+     coasnap_date: 2017-09-06T17:00:00.000Z,
+     coasnap_debit: 101000,
+     coasnap_credit: 8282818.18,
+     coasnap_balance: -8181818.18,
+     generated_date: 2017-09-25T11:50:50.924Z } }
+[2017-09-25 11:50:50.926] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.927] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 17,
+     tydet_id: 6,
+     coasnap_date: 2017-09-06T17:00:00.000Z,
+     coasnap_debit: 89649455.64,
+     coasnap_credit: 89657454.54,
+     coasnap_balance: -7998.9000000059605,
+     generated_date: 2017-09-25T11:50:50.926Z } }
+[2017-09-25 11:50:50.927] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.929] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 9,
+     tydet_id: 3,
+     coasnap_date: 2017-09-07T17:00:00.000Z,
+     coasnap_debit: 6800,
+     coasnap_credit: 4200,
+     coasnap_balance: 2600,
+     generated_date: 2017-09-25T11:50:50.927Z } }
+[2017-09-25 11:50:50.930] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.931] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 17,
+     tydet_id: 6,
+     coasnap_date: 2017-09-07T17:00:00.000Z,
+     coasnap_debit: 4200,
+     coasnap_credit: 6800,
+     coasnap_balance: -2600,
+     generated_date: 2017-09-25T11:50:50.930Z } }
+[2017-09-25 11:50:50.931] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.933] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 10,
+     tydet_id: 3,
+     coasnap_date: 2017-06-29T17:00:00.000Z,
+     coasnap_debit: 2600000,
+     coasnap_credit: 0,
+     coasnap_balance: 2600000,
+     generated_date: 2017-09-25T11:50:50.931Z } }
+[2017-09-25 11:50:50.933] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.935] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 11,
+     tydet_id: 3,
+     coasnap_date: 2017-02-01T13:00:00.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 50000,
+     coasnap_balance: -50000,
+     generated_date: 2017-09-25T11:50:50.934Z } }
+[2017-09-25 11:50:50.935] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.937] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 37,
+     tydet_id: 13,
+     coasnap_date: 2017-02-01T13:00:00.000Z,
+     coasnap_debit: 50000,
+     coasnap_credit: 0,
+     coasnap_balance: -50000,
+     generated_date: 2017-09-25T11:50:50.935Z } }
+[2017-09-25 11:50:50.937] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.941] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 11,
+     tydet_id: 3,
+     coasnap_date: 2017-02-28T17:00:00.000Z,
+     coasnap_debit: 702048048038068900,
+     coasnap_credit: 702048048038068900,
+     coasnap_balance: 0,
+     generated_date: 2017-09-25T11:50:50.937Z } }
+[2017-09-25 11:50:50.941] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.943] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 11,
+     tydet_id: 3,
+     coasnap_date: 2017-09-05T17:00:00.000Z,
+     coasnap_debit: 32045000,
+     coasnap_credit: 20070000,
+     coasnap_balance: 11975000,
+     generated_date: 2017-09-25T11:50:50.941Z } }
+[2017-09-25 11:50:50.943] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.945] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 11,
+     tydet_id: 3,
+     coasnap_date: 2017-09-06T17:00:00.000Z,
+     coasnap_debit: 13880,
+     coasnap_credit: 9440,
+     coasnap_balance: 4440,
+     generated_date: 2017-09-25T11:50:50.943Z } }
+[2017-09-25 11:50:50.945] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.947] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 42,
+     tydet_id: 15,
+     coasnap_date: 2017-09-06T17:00:00.000Z,
+     coasnap_debit: 4440,
+     coasnap_credit: 8880,
+     coasnap_balance: -4440,
+     generated_date: 2017-09-25T11:50:50.945Z } }
+[2017-09-25 11:50:50.947] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.949] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 11,
+     tydet_id: 3,
+     coasnap_date: 2017-09-07T17:00:00.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 3000,
+     coasnap_balance: -3000,
+     generated_date: 2017-09-25T11:50:50.947Z } }
+[2017-09-25 11:50:50.949] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.950] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 38,
+     tydet_id: 14,
+     coasnap_date: 2017-09-07T17:00:00.000Z,
+     coasnap_debit: 3000,
+     coasnap_credit: 0,
+     coasnap_balance: 3000,
+     generated_date: 2017-09-25T11:50:50.949Z } }
+[2017-09-25 11:50:50.951] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.953] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 34,
+     tydet_id: 11,
+     coasnap_date: 2017-09-06T17:00:00.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 1750000,
+     coasnap_balance: 1750000,
+     generated_date: 2017-09-25T11:50:50.951Z } }
+[2017-09-25 11:50:50.953] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.955] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 35,
+     tydet_id: 12,
+     coasnap_date: 2017-09-05T17:00:00.000Z,
+     coasnap_debit: 117066272.73,
+     coasnap_credit: 234078545.46,
+     coasnap_balance: 117012272.73,
+     generated_date: 2017-09-25T11:50:50.953Z } }
+[2017-09-25 11:50:50.956] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.957] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 73,
+     tydet_id: 16,
+     coasnap_date: 2017-09-05T17:00:00.000Z,
+     coasnap_debit: 5433,
+     coasnap_credit: 5416.5,
+     coasnap_balance: 16.5,
+     generated_date: 2017-09-25T11:50:50.956Z } }
+[2017-09-25 11:50:50.957] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.959] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 38,
+     tydet_id: 14,
+     coasnap_date: 2017-09-05T17:00:00.000Z,
+     coasnap_debit: 6500000,
+     coasnap_credit: 6500000,
+     coasnap_balance: 0,
+     generated_date: 2017-09-25T11:50:50.958Z } }
+[2017-09-25 11:50:50.959] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.961] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 38,
+     tydet_id: 14,
+     coasnap_date: 2017-09-06T17:00:00.000Z,
+     coasnap_debit: 6506000,
+     coasnap_credit: 6500000,
+     coasnap_balance: 6000,
+     generated_date: 2017-09-25T11:50:50.960Z } }
+[2017-09-25 11:50:50.961] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.964] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 39,
+     tydet_id: 15,
+     coasnap_date: 2017-09-05T17:00:00.000Z,
+     coasnap_debit: 70000,
+     coasnap_credit: 45000,
+     coasnap_balance: 25000,
+     generated_date: 2017-09-25T11:50:50.962Z } }
+[2017-09-25 11:50:50.964] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.966] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 39,
+     tydet_id: 15,
+     coasnap_date: 2017-09-06T17:00:00.000Z,
+     coasnap_debit: 1175,
+     coasnap_credit: 0,
+     coasnap_balance: 1175,
+     generated_date: 2017-09-25T11:50:50.964Z } }
+[2017-09-25 11:50:50.966] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.968] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 40,
+     tydet_id: 15,
+     coasnap_date: 2017-09-06T17:00:00.000Z,
+     coasnap_debit: 3825,
+     coasnap_credit: 5000,
+     coasnap_balance: -1175,
+     generated_date: 2017-09-25T11:50:50.966Z } }
+[2017-09-25 11:50:50.968] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.970] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 59,
+     tydet_id: 15,
+     coasnap_date: 2017-09-05T17:00:00.000Z,
+     coasnap_debit: 0,
+     coasnap_credit: 12000000,
+     coasnap_balance: -12000000,
+     generated_date: 2017-09-25T11:50:50.968Z } }
+[2017-09-25 11:50:50.970] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.972] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 65,
+     tydet_id: 15,
+     coasnap_date: 2017-09-05T17:00:00.000Z,
+     coasnap_debit: 23400000,
+     coasnap_credit: 11700000,
+     coasnap_balance: 11700000,
+     generated_date: 2017-09-25T11:50:50.970Z } }
+[2017-09-25 11:50:50.972] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:50.975] [TRACE] cron_snapshot.log - { action: 'variablefromjournal',
+  'data-log': { date: 2017-11-30T00:00:00.000Z, company_id: 1 } }
+[2017-09-25 11:50:50.977] [TRACE] cron_snapshot.log - { action: 'Intdate',
+  'data-log': 
+   { IntJournDate: 1485820800000,
+     IntDatefromjournal: 1512000000000 } }
+[2017-09-25 11:50:50.981] [TRACE] cron_snapshot.log - { action: 'variableinsertqueue',
+  'data-log': { company_id: 1, date: 2017-11-30T00:00:00.000Z } }
+[2017-09-25 11:50:50.988] [INFO] cron_snapshot.log - { action: 'generate_snapshot',
+  'data-log': 
+   { message: 'generate snapshot ytd',
+     data: 2017-09-25T11:50:50.988Z } }
+[2017-09-25 11:50:52.007] [TRACE] cron_snapshot.log - { action: 'getjournupdate',
+  'data-log': 'success get journ update' }
+[2017-09-25 11:50:52.030] [TRACE] cron_snapshot.log - { action: 'listjournalfromselect',
+  'data-log': '[{"journ_id":228,"company_id":1,"reversed_to":232,"journ_count":50,"journ_name":"Depreciation Test Asset 1","journ_date":"2017-11-30T00:00:00.000Z","journ_remarks":"Depreciation of 2","journ_status":"closed","source_from":"fixed-assets","is_locked":1,"created_by":1,"updated_by":1,"created_date":"2017-09-14T06:39:48.000Z","updated_date":"2017-09-14T06:41:47.000Z","journal_details":[{"coadet_id":3,"debit":178999.99,"credit":178999.99,"coa_detail":{"tydet_id":3,"coadet_name":"Other Receivables","coadet_code":"1200","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":0},{"coadet_id":4,"debit":178999.99,"credit":178999.99,"coa_detail":{"tydet_id":3,"coadet_name":"VAT In","coadet_code":"1210","coa_type_detail":{"tydet_id":3,"coa_type":{"ctype_position":"debit"}}},"tydet_id":3,"balance":0}]}]' }
+[2017-09-25 11:50:52.036] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 3,
+     tydet_id: 3,
+     coasnap_date: 2017-11-30T00:00:00.000Z,
+     coasnap_debit: 178999.99,
+     coasnap_credit: 178999.99,
+     coasnap_balance: 0,
+     generated_date: 2017-09-25T11:50:52.030Z } }
+[2017-09-25 11:50:52.037] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:52.040] [TRACE] cron_snapshot.log - { action: 'datasendSaveSnapshot',
+  'data-log': 
+   { company_id: 1,
+     coadet_id: 4,
+     tydet_id: 3,
+     coasnap_date: 2017-11-30T00:00:00.000Z,
+     coasnap_debit: 178999.99,
+     coasnap_credit: 178999.99,
+     coasnap_balance: 0,
+     generated_date: 2017-09-25T11:50:52.037Z } }
+[2017-09-25 11:50:52.041] [TRACE] cron_snapshot.log - { action: 'savesnapshot', 'data-log': 'Success' }
+[2017-09-25 11:50:52.043] [TRACE] cron_snapshot.log - { action: 'variablefromjournal',
+  'data-log': { date: 2017-11-30T00:00:00.000Z, company_id: 1 } }
+[2017-09-25 11:50:52.044] [TRACE] cron_snapshot.log - { action: 'Intdate',
+  'data-log': 
+   { IntJournDate: 1512000000000,
+     IntDatefromjournal: 1512000000000 } }
+[2017-09-25 11:50:52.045] [TRACE] cron_snapshot.log - { action: 'variableinsertqueue',
+  'data-log': { company_id: 1, date: 2017-11-30T00:00:00.000Z } }
+[2017-09-25 11:50:52.053] [INFO] cron_snapshot.log - { action: 'generate_snapshot',
+  'data-log': 
+   { message: 'generate snapshot ytd',
+     data: 2017-09-25T11:50:52.053Z } }
+[2017-09-25 11:50:53.083] [INFO] cron_snapshot.log - { action: 'generate_snapshot',
+  'data-log': 
+   { message: 'generate snapshot ytd',
+     data: 2017-09-25T11:50:53.083Z } }
+[2017-09-25 11:50:54.109] [INFO] cron_snapshot.log - { action: 'generate_snapshot',
+  'data-log': 
+   { message: 'generate snapshot ytd',
+     data: 2017-09-25T11:50:54.109Z } }
+[2017-09-25 11:50:55.124] [INFO] cron_snapshot.log - { action: 'generate_snapshot',
+  'data-log': 
+   { message: 'generate snapshot ytd',
+     data: 2017-09-25T11:50:55.124Z } }
+[2017-09-25 11:50:56.135] [INFO] cron_snapshot.log - { action: 'generate_snapshot',
+  'data-log': 
+   { message: 'generate snapshot ytd',
+     data: 2017-09-25T11:50:56.135Z } }
+[2017-09-25 11:50:57.154] [INFO] cron_snapshot.log - { action: 'generate_snapshot',
+  'data-log': 
+   { message: 'generate snapshot ytd',
+     data: 2017-09-25T11:50:57.154Z } }
+[2017-09-25 11:50:58.175] [INFO] cron_snapshot.log - { action: 'generate_snapshot',
+  'data-log': 
+   { message: 'generate snapshot ytd',
+     data: 2017-09-25T11:50:58.175Z } }
+[2017-09-25 11:50:59.196] [INFO] cron_snapshot.log - { action: 'generate_snapshot',
+  'data-log': 
+   { message: 'generate snapshot ytd',
+     data: 2017-09-25T11:50:59.196Z } }
+[2017-09-25 11:51:00.218] [INFO] cron_snapshot.log - { action: 'generate_snapshot',
+  'data-log': 
+   { message: 'generate snapshot ytd',
+     data: 2017-09-25T11:51:00.218Z } }
+[2017-09-25 11:51:01.221] [INFO] cron_snapshot.log - { action: 'END',
+  'data-log': 
+   { message: 'Signal : SIGINT',
+     config: 
+      { infinite_loop: false,
+        log_folder: '/home/rangga/harmony/accounting/logs',
+        log_file: 'cron_snapshot',
+        pid_file: '/home/rangga/harmony/accounting/pid/cron_snapshot',
+        source: '/home/rangga/harmony/accounting/cronjob/snapshot/logic.js',
+        sleep: 1000,
+        run: 'run',
+        init: false,
+        close: false,
+        signal_info: 'SIGINT' } } }
